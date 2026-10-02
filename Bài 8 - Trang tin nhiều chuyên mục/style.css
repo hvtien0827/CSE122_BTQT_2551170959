@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --primary-color: #1668c1;
+    --card-header-color: white;
+}
+
+body {
+    background-color: #ccc;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 30px 20px;
+    background-color: white;
+}
+
+/* Tiêu đề chính */
+.header {
+    color: var(--primary-color);
+    font-size: 30px;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    border-top: 4px solid var(--primary-color);
+}
+
+.left-content {
+    background-color: #f7fafd;
+    padding-left: 20px;
+    font-size: 25px;
+    width: 20%;
+}
+
+.left-content > .menu-title {
+    color: rgb(104, 101, 101);
+    font-size: 20px;
+    padding: 20px 0 15px 0;
+}
+
+li {
+    list-style: none;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.right-content {
+    border-left: 2px solid #ccc;
+    width: 80%;
+    padding: 30px;
+}
+
+/* Card header*/
+h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 20px 5px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+ /* Đầu đề */
+.right-content h3 {
+    color: var(--primary-color);
+}
+
+/* Khối văn bản trong box */
+.right-content .card-text {
+    font-size: 25px;
+}
+
+/* Toàn bộ 4 thẻ */
+.right-content > div {
+    padding-top: 10px ;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dashed #ccc;
+    padding: 20px;
+}
+
+.card-text {
+    width: 80%;
+    padding-right: 20px;
+}
+
+.image-card {
+    width: 20%;
+    border-radius: 20px;
+}
+
+
+
+
