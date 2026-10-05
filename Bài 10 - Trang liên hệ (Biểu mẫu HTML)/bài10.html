@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="contact-card">
+        <header class="header">
+            <h2>Liên hệ với chúng tôi</h2>
+            <p>Vui lòng điền thông tin bên dưới, chúng tôi sẽ phản hồi trong 24 giờ</p>
+        </header>
+        <form class="contact-form">
+            <div class="boxs">
+                <div class="box">
+                    <label>Họ và tên</label>
+                    <input type="text">
+                </div>
+                <div class="box">
+                    <label>Email</label>
+                    <input type="text">
+                </div>
+                <div class="box">
+                    <label>Số điện thoại</label>
+                    <input type="text">
+                </div>
+                <div class="box">
+                    <label>Chủ đề</label>
+                    <div class="topic-box"> 
+                        <select id="select">
+                            <option value="a">Hỏi về trang web</option>
+                            <option value="b">Hỏi về bài tập</option>
+                            <option value="c">Hỏi về khoá học</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <div class="message box">
+                <span>Nội dung</span>
+                <textarea name="message" id="message" spellcheck="false"></textarea>
+            </div>
+            <div class="check">
+                <span>Tôi đồng ý nhận email phản hồi</span>
+                <input type="checkbox" id="checkbox">
+            </div>
+            <div class="actions">
+                <button type="submit" class="send btn">Gửi liên hệ</button>
+                <button type="reset" class="reset btn">Nhập lại</button>
+            </div>
+        </form>
+
+    </main>
+</body>
+
+</html>
