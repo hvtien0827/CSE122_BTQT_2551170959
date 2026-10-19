@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Times New Roman", serif;
+    font-size: min(1.3vw, 2.6vh);
+    color: #111;
+    background: #f1f5f9;
+}
+
+main {
+    width: 80vw;
+    padding: 1.55em 2em;
+    border-radius: 12px;
+    background: #fffdf5;
+    box-shadow: 0 6px 24px #00000014;
+}
+
+h1 {
+    margin: 0;
+    color: #e65100;
+    font-size: 1.78em;
+    line-height: 1.1;
+}
+
+header p {
+    margin: 0.22em 0 1em;
+    color: #e65100;
+    font-size: 1.11em;
+}
+
+article {
+    overflow: hidden;
+}
+
+article p {
+    width: 65%;
+    margin: 0 0 0.78em;
+    line-height: 1.5;
+    font-size: 1.3em;
+}
+
+.intro::first-letter {
+    float: left;
+    padding-right: 0.12em;
+    color: #e65100;
+    font-size: 2.89em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.flower {
+    float: right;
+    width: 30%;
+    margin: 0 0 0.78em 1.33em;
+    border-radius: 6px;
+}
+
+aside {
+    margin-top: 0.89em;
+    padding: 0.78em 1.11em;
+    border: 2px solid #2e7d32;
+    border-radius: 8px;
+    background: #f4fbf4;
+}
+
+h2 {
+    margin: 0 0 0.48em;
+    color: #2e7d32;
+    font-size: 1.17em;
+    font-style: italic;
+}
+
+ul {
+    columns: 2;
+    column-gap: 2em;
+    margin: 0;
+    padding-left: 1.11em;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 0.33em;
+}
