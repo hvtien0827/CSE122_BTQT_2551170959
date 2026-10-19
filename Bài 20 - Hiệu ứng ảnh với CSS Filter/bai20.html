@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 20 - Hiệu ứng ảnh với CSS Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <h1>Hiệu ứng ảnh với CSS Filter</h1>
+    <div class="photo"><img id="rose" src="images/hoahong.gif" alt="Hoa hồng"><p>Special For You</p></div>
+    <div class="effects" aria-label="Chọn hiệu ứng">
+      <button type="button" onclick="applyEffect('Gray', this)" class="active" aria-pressed="true">Gray</button>
+      <button type="button" onclick="applyEffect('Xray', this)" aria-pressed="false">Xray</button>
+      <button type="button" onclick="applyEffect('Invert', this)" aria-pressed="false">Invert</button>
+      <button type="button" onclick="applyEffect('FlipH', this)" aria-pressed="false">FlipH</button>
+      <button type="button" onclick="applyEffect('FlipV', this)" aria-pressed="false">FlipV</button>
+      <button type="button" onclick="applyEffect('Glow', this)" aria-pressed="false">Glow</button>
+      <button type="button" onclick="applyEffect('Shadow', this)" aria-pressed="false">Shadow</button>
+      <button type="button" onclick="applyEffect('Bold Shadow', this)" aria-pressed="false">Bold Shadow</button>
+      <button type="button" onclick="applyEffect('DropShadow', this)" aria-pressed="false">DropShadow</button>
+      <button type="button" onclick="applyEffect('Blur', this)" aria-pressed="false">Blur</button>
+      <button type="button" onclick="applyEffect('Wave', this)" aria-pressed="false">Wave</button>
+      <button type="button" onclick="applyEffect('Mask', this)" aria-pressed="false">Mask</button>
+      <button type="button" onclick="applyEffect('Alpha', this)" aria-pressed="false">Alpha</button>
+    </div>
+    <!-- Bộ lọc Wave làm lệch các điểm ảnh theo vùng nhiễu. -->
+    <svg width="0" height="0" aria-hidden="true"><defs>
+      <filter id="wave"><feTurbulence type="turbulence" baseFrequency="0.025" numOctaves="1" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="14"/>
+      </filter>
+    </defs></svg>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
