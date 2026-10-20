@@ -1,0 +1,60 @@
+body {
+    background: #e9ecef;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    min-height: 100vh;
+}
+
+.sidebar {
+    min-width: 0;
+}
+
+.brand {
+    margin: 0;
+    padding: 20px 16px;
+    border-bottom: 1px solid #ffffff30;
+}
+
+.sidebar .nav-link {
+    color: #ffffff80;
+    font-size: 14px;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+    color: white;
+}
+
+main {
+    min-width: 0;
+}
+
+.stat-label {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #495057;
+}
+
+.progress {
+    height: 6px;
+}
+
+.progress-80 {
+    width: 80%;
+}
+
+.progress-75 {
+    width: 75%;
+}
+
+.progress-25 {
+    width: 25%;
+}
+
+.progress-78 {
+    width: 78%;
+}
