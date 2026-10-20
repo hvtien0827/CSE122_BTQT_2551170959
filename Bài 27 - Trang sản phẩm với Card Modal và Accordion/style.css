@@ -1,0 +1,12 @@
+body {
+    background: #f8f9fa;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}

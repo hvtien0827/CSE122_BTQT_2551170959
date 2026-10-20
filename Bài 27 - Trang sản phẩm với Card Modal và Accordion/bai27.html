@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 27 - Trang sản phẩm với Card Modal và Accordion</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container py-4">
+            <h1 class="h3 text-center text-danger mb-4">Danh lam thắng cảnh</h1>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card h-100 shadow-sm">
+                        <img
+                            class="card-img-top"
+                            src="images/2-son-doong.jpg"
+                            alt="Hang Sơn Đoòng"
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="h5">Hang Sơn Đoòng</h2>
+                            <p>Hang động tự nhiên lớn nhất thế giới.</p>
+                            <button
+                                type="button"
+                                class="btn btn-danger mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#detail-1"
+                            >
+                                Chi tiết
+                            </button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card h-100 shadow-sm">
+                        <img
+                            class="card-img-top"
+                            src="images/5-mekong.jpg"
+                            alt="Đồng bằng sông Cửu Long"
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="h5">ĐBSCL</h2>
+                            <p>Miệt vườn sông nước trù phú.</p>
+                            <button
+                                type="button"
+                                class="btn btn-danger mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#detail-4"
+                            >
+                                Chi tiết
+                            </button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card h-100 shadow-sm">
+                        <img
+                            class="card-img-top"
+                            src="images/6-phong-nha.jpg"
+                            alt="Động Phong Nha"
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="h5">Động Phong Nha</h2>
+                            <p>Hệ thống hang động kỳ vĩ.</p>
+                            <button
+                                type="button"
+                                class="btn btn-danger mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#detail-5"
+                            >
+                                Chi tiết
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="accordion mt-4" id="travel-tips">
+                <section class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#experience"
+                            aria-expanded="true"
+                            aria-controls="experience"
+                        >
+                            Kinh nghiệm du lịch
+                        </button>
+                    </h2>
+                    <div
+                        id="experience"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#travel-tips"
+                    >
+                        <div class="accordion-body">
+                            Chuẩn bị giấy tờ, đặt tour sớm, mang theo thuốc chống côn trùng.
+                        </div>
+                    </div>
+                </section>
+                <section class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#cost"
+                            aria-expanded="false"
+                            aria-controls="cost"
+                        >
+                            Chi phí dự kiến
+                        </button>
+                    </h2>
+                    <div
+                        id="cost"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#travel-tips"
+                    >
+                        <div class="accordion-body">
+                            Chi phí tùy điểm đến và lịch trình. Cần dự trù tiền di chuyển, lưu trú,
+                            vé tham quan và ăn uống.
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div
+            class="modal fade"
+            id="detail-1"
+            tabindex="-1"
+            aria-labelledby="title-1"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="title-1">Hang Sơn Đoòng</h2>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Đóng"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            class="rounded mb-3"
+                            src="images/2-son-doong.jpg"
+                            alt="Hang Sơn Đoòng"
+                        />
+                        <p>Hang động tự nhiên lớn nhất thế giới.</p>
+                        <p>Liên hệ hướng dẫn viên để chọn thời gian và lịch trình phù hợp.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Đóng</button
+                        ><button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                            Đặt ngay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="modal fade"
+            id="detail-4"
+            tabindex="-1"
+            aria-labelledby="title-4"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="title-4">Đồng bằng sông Cửu Long</h2>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Đóng"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            class="rounded mb-3"
+                            src="images/5-mekong.jpg"
+                            alt="Đồng bằng sông Cửu Long"
+                        />
+                        <p>Miệt vườn sông nước trù phú.</p>
+                        <p>Liên hệ hướng dẫn viên để chọn thời gian và lịch trình phù hợp.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Đóng</button
+                        ><button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                            Đặt ngay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="modal fade"
+            id="detail-5"
+            tabindex="-1"
+            aria-labelledby="title-5"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="title-5">Động Phong Nha</h2>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Đóng"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            class="rounded mb-3"
+                            src="images/6-phong-nha.jpg"
+                            alt="Động Phong Nha"
+                        />
+                        <p>Hệ thống hang động kỳ vĩ.</p>
+                        <p>Liên hệ hướng dẫn viên để chọn thời gian và lịch trình phù hợp.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Đóng</button
+                        ><button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                            Đặt ngay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
