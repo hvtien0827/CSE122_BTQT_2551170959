@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+:root {
+    --nen: #f1f5f9;
+    --chu: #1e293b;
+    --the: #ffffff;
+    --vien: #cbd5e1;
+    --nhan: #2563eb;
+    --nut: #2563eb;
+    --con-tro: #ffffff;
+}
+
+.toi {
+    --nen: #0f172a;
+    --chu: #e2e8f0;
+    --the: #1e293b;
+    --vien: #334155;
+    --nhan: #60a5fa;
+    --nut: #60a5fa;
+}
+
+body {
+    background: var(--nen);
+    color: var(--chu);
+}
+
+body,
+section,
+h2,
+button {
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        border-color 0.3s;
+}
+
+main {
+    width: 800px;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+h2 {
+    color: var(--nhan);
+    font-size: 21px;
+}
+
+section {
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: 1px solid var(--vien);
+    border-radius: 10px;
+    background: var(--the);
+}
+
+#theme-toggle {
+    background: var(--nut);
+    border: 0;
+    width: 58px;
+    min-width: 58px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+#theme-toggle span {
+    display: block;
+    background: var(--con-tro);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toi #theme-toggle span {
+    transform: translateX(28px);
+}
